@@ -30,9 +30,6 @@
 
         </a-assets>
 		
-		<a-camera oculus-touch-controls="hand: left"></a-camera>
-		<a-camera oculus-touch-controls="hand: right"></a-camera>
-		
         <!-- Milky Way-->
         <a-sky src="#mw"></a-sky>
 
@@ -115,10 +112,27 @@
             </a-sphere>
         </a-entity>
 
-        <!-- Camera -->
+        <!-- Original Camera>
         <a-entity>
             <a-camera position="0 5 150"></a-camera>
         </a-entity>
+		<-->
+		
+		<!-- Controls for Meta quest and similar headsets -->
+		<!-- https://www.techagekids.com/2022/09/code-3d-vr-halloween-scene-meta-quest-a-frame.html -->
+		      <a-entity id="rig">
+		        <a-camera position="0 5 150"></a-camera>
+		        <a-entity oculus-touch-controls="hand: left" ></a-entity>
+		        <a-entity oculus-touch-controls="hand: right" oculus-thumbstick-controls></a-entity>
+		      </a-entity>
+		
+		<!-- chatGPT suggestion>
+		<a-camera oculus-touch-controls="hand: left"></a-camera>
+		<a-camera oculus-touch-controls="hand: right"></a-camera>
+		<-->
+			
+		
+		
     </a-scene>
 </body>
 
