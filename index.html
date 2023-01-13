@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我们的 Solar System</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
 </head>
 
 <body>
@@ -30,8 +30,8 @@
 
         </a-assets>
 		
-		<a-entity oculus-touch-controls="hand: left"></a-entity>
-		<a-entity oculus-touch-controls="hand: right"></a-entity>
+		<a-camera oculus-touch-controls="hand: left"></a-camera>
+		<a-camera oculus-touch-controls="hand: right"></a-camera>
 		
         <!-- Milky Way-->
         <a-sky src="#mw"></a-sky>
